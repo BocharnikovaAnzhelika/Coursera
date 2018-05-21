@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS-селекторы</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="../global.css">
+    </head>
+    <body>
+        <h1 class="global-heading">&nbsp;</h1>
+        <p>Решите задачу, используя <code>color: &lt;color&gt;</code> и <code>opacity: &lt;value&gt;</code></p>
+
+        <main class="global-results">
+            <style>
+              section.global-result article.global-scope a[href$="ya.ru"] {
+                color: #6698ff;
+              }
+              section.global-result article.global-scope a[href$="ya.ru"]:hover {
+                color: #ff6698;
+              }
+              section.global-result article.global-scope a[href$="ya.ru"]:hover + a.link {
+                opacity: 0.5;
+              }
+              section.global-result article.global-scope a[href$="ya.ru"]:active {
+                color: #98ff66;
+              }
+              section.global-result article.global-scope a[href$="ya.ru"]:active + a.link {
+                color: #000;
+              }
+              section.global-result article.global-scope a[href$="ya.ru"]:visited {
+                color: #ffb366;
+              }
+            </style>
+
+            <section class="global-result">
+                <article class="global-scope">
+                    <a class="link" href="https://ya.ru" target="_blank">link</a>
+                    <a class="link">pseudolink</a>
+                </article>
+            </section>
+
+            <section class="global-result">
+                <img class="global-goal">
+            </section>
+        </main>
+
+        <nav class="global-nav">
+            <a class="global-prev">Предыдущее</a>
+            <a class="global-next">Следующее</a>
+        </nav>
+
+        <script src="../global.js"></script>
+    </body>
+</html>

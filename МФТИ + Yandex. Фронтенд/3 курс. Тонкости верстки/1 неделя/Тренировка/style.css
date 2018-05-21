@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 400px;
+  box-sizing: border-box;
+  margin: 50px auto;
+  border: 2px dashed red;
+  padding: 25px;
+}
+
+h2 {
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+p {
+  width: 80%;
+  margin: 0 auto 0;
+  text-align: center;
+}
